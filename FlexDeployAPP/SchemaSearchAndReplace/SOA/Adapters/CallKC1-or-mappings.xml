@@ -4,7 +4,7 @@
    <class-mapping-descriptors>
       <class-mapping-descriptor xsi:type="object-relational-class-mapping-descriptor">
          <class>CallKC1.Otmsoal2</class>
-         <alias>FRNTST033.OTMSOAL2</alias>
+         <alias>${{MB_KC_LIB}}.OTMSOAL2</alias>
          <primary-key>
             <field table="OTMSOAL2" name="SOORD" xsi:type="column"/>
          </primary-key>
