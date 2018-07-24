@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="5b0f4c69-6a1b-44c5-bdd6-a88fd53b1928" activeEnvironment="Default" name="Scenario1" resourceRoot="" soapui-version="5.4.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="113d6777-fee6-4854-86fb-6224761df382" wsaVersion="NONE" name="BPELProcessBinding" type="wsdl" bindingName="{http://xmlns.oracle.com/Development/SchemaSearchAndReplace/BPELProcess}BPELProcessBinding" soapVersion="1_1" anonymous="optional" definition="http://mbci-soatest-12c.itciss.com/soa-infra/services/POC/SchemaSearchAndReplace/bpelprocess_client_ep?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://mbci-soatest-12c.itciss.com/soa-infra/services/POC/SchemaSearchAndReplace/bpelprocess_client_ep?WSDL"><con:part><con:url>http://mbci-soatest-12c.itciss.com/soa-infra/services/POC/SchemaSearchAndReplace/bpelprocess_client_ep?WSDL</con:url><con:content><![CDATA[<wsdl:definitions name="BPELProcess" targetNamespace="http://xmlns.oracle.com/Development/SchemaSearchAndReplace/BPELProcess" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:client="http://xmlns.oracle.com/Development/SchemaSearchAndReplace/BPELProcess" xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:documentation>
+    <abstractWSDL>http://mbci-soatest-12c.itciss.com:80/soa-infra/services/POC/SchemaSearchAndReplace!1.0/WSDLs/BPELProcess.wsdl</abstractWSDL>
+  </wsdl:documentation>
+  <plnk:partnerLinkType name="BPELProcess">
+    <plnk:role name="BPELProcessProvider" portType="client:BPELProcess"/>
+  </plnk:partnerLinkType>
+  <wsdl:types>
+    <schema xmlns="http://www.w3.org/2001/XMLSchema">
+      <import namespace="http://xmlns.oracle.com/Development/SchemaSearchAndReplace/BPELProcess" schemaLocation="http://mbci-soatest-12c.itciss.com:80/soa-infra/services/POC/SchemaSearchAndReplace/bpelprocess_client_ep?XSD=../Schemas/BPELProcess.xsd"/>
+    </schema>
+  </wsdl:types>
+  <wsdl:message name="BPELProcessRequestMessage">
+    <wsdl:part name="payload" element="client:process"/>
+  </wsdl:message>
+  <wsdl:message name="BPELProcessResponseMessage">
+    <wsdl:part name="payload" element="client:processResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="BPELProcess">
+    <wsdl:operation name="process">
+      <wsdl:input message="client:BPELProcessRequestMessage"/>
+      <wsdl:output message="client:BPELProcessResponseMessage"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BPELProcessBinding" type="client:BPELProcess">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="process">
+      <soap:operation style="document" soapAction="process"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="bpelprocess_client_ep">
+    <wsdl:port name="BPELProcess_pt" binding="client:BPELProcessBinding">
+      <soap:address location="http://mbci-soatest-12c.itciss.com:80/soa-infra/services/POC/SchemaSearchAndReplace/bpelprocess_client_ep"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://mbci-soatest-12c.itciss.com:80/soa-infra/services/POC/SchemaSearchAndReplace/bpelprocess_client_ep?XSD=../Schemas/BPELProcess.xsd</con:url><con:content><![CDATA[<schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://xmlns.oracle.com/Development/SchemaSearchAndReplace/BPELProcess" xmlns="http://www.w3.org/2001/XMLSchema">
+  <element name="process">
+    <complexType>
+      <sequence>
+        <element name="input" type="string"/>
+      </sequence>
+    </complexType>
+  </element>
+  <element name="processResponse">
+    <complexType>
+      <sequence>
+        <element name="result" type="string"/>
+      </sequence>
+    </complexType>
+  </element>
+</schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://mbci-soatest-12c.itciss.com:80/soa-infra/services/POC/SchemaSearchAndReplace/bpelprocess_client_ep</con:endpoint></con:endpoints><con:operation id="76eafc5e-8e49-4833-903e-bfef66016854" isOneWay="false" action="process" name="process" bindingOperationName="process" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="636df279-5ae7-46b2-bf90-89d6b809e464" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://mbci-soatest-12c.itciss.com:80/soa-infra/services/POC/SchemaSearchAndReplace/bpelprocess_client_ep</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:bpel="http://xmlns.oracle.com/Development/SchemaSearchAndReplace/BPELProcess">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <bpel:process>\r
+         <bpel:input>16982</bpel:input>\r
+      </bpel:process>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="process"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
