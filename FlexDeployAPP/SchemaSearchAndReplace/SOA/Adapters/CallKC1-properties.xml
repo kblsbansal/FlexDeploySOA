@@ -1,0 +1,56 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+   <entry key="root_descriptor_alias">${{MB_KC_LIB}}.OTMSOAL2</entry>
+   <entry key="${{MB_KC_LIB}}.OTMSOAL2.SOEMAL:db_column_not_null">true</entry>
+   <entry key="${{MB_KC_LIB}}.OTMSOAL2.SOSUFX:db_column_not_null">true</entry>
+   <entry key="${{MB_KC_LIB}}.OTMSOAL2.SOSUFX:db_column_scale">0</entry>
+   <entry key="${{MB_KC_LIB}}.OTMSOAL2.SOOTP:db_column_not_null">true</entry>
+   <entry key="${{MB_KC_LIB}}.OTMSOAL2.SOFLG:db_column_not_null">true</entry>
+   <entry key="${{MB_KC_LIB}}.OTMSOAL2:db_column_11">SOTIM</entry>
+   <entry key="${{MB_KC_LIB}}.OTMSOAL2:db_column_10">SOUSC5</entry>
+   <entry key="${{MB_KC_LIB}}.OTMSOAL2.SOTIM:db_column_type">TIMESTAMP</entry>
+   <entry key="${{MB_KC_LIB}}.OTMSOAL2.SOUSC5:db_column_not_null">true</entry>
+   <entry key="${{MB_KC_LIB}}.OTMSOAL2.SOTYP:db_column_not_null">true</entry>
+   <entry key="${{MB_KC_LIB}}.OTMSOAL2.SOEMAL:db_column_type">CHAR</entry>
+   <entry key="${{MB_KC_LIB}}.OTMSOAL2.SOORD:db_column_scale">0</entry>
+   <entry key="${{MB_KC_LIB}}.OTMSOAL2.SOSUFX:db_column_type">NUMERIC</entry>
+   <entry key="${{MB_KC_LIB}}.OTMSOAL2.SOUSC4:db_column_not_null">true</entry>
+   <entry key="${{MB_KC_LIB}}.OTMSOAL2.SOORD:db_column_not_null">true</entry>
+   <entry key="${{MB_KC_LIB}}.OTMSOAL2.SOEMAL:db_column_size">1</entry>
+   <entry key="${{MB_KC_LIB}}.OTMSOAL2.SOORD:db_column_type">NUMERIC</entry>
+   <entry key="${{MB_KC_LIB}}.OTMSOAL2.SOUSC3:db_column_not_null">true</entry>
+   <entry key="${{MB_KC_LIB}}.OTMSOAL2:db_table_type">TABLE</entry>
+   <entry key="${{MB_KC_LIB}}.OTMSOAL2.SOOTP:db_column_type">CHAR</entry>
+   <entry key="${{MB_KC_LIB}}.OTMSOAL2.SOUSC2:db_column_not_null">true</entry>
+   <entry key="${{MB_KC_LIB}}.OTMSOAL2.SOUSC5:db_column_type">CHAR</entry>
+   <entry key="${{MB_KC_LIB}}.OTMSOAL2:db_column_9">SOUSC4</entry>
+   <entry key="${{MB_KC_LIB}}.OTMSOAL2:db_column_8">SOUSC3</entry>
+   <entry key="${{MB_KC_LIB}}.OTMSOAL2:db_column_7">SOUSC2</entry>
+   <entry key="${{MB_KC_LIB}}.OTMSOAL2.SOUSC4:db_column_type">CHAR</entry>
+   <entry key="return_single_result_set">false</entry>
+   <entry key="${{MB_KC_LIB}}.OTMSOAL2:db_column_6">SOUSC1</entry>
+   <entry key="${{MB_KC_LIB}}.OTMSOAL2:db_column_5">SOEMAL</entry>
+   <entry key="${{MB_KC_LIB}}.OTMSOAL2.SOUSC3:db_column_type">CHAR</entry>
+   <entry key="${{MB_KC_LIB}}.OTMSOAL2.SOFLG:db_column_type">CHAR</entry>
+   <entry key="${{MB_KC_LIB}}.OTMSOAL2:db_column_4">SOOTP</entry>
+   <entry key="${{MB_KC_LIB}}.OTMSOAL2.SOTYP:db_column_type">CHAR</entry>
+   <entry key="${{MB_KC_LIB}}.OTMSOAL2:db_column_3">SOFLG</entry>
+   <entry key="${{MB_KC_LIB}}.OTMSOAL2:db_column_2">SOSUFX</entry>
+   <entry key="${{MB_KC_LIB}}.OTMSOAL2.SOUSC2:db_column_type">CHAR</entry>
+   <entry key="${{MB_KC_LIB}}.OTMSOAL2.SOUSC1:db_column_not_null">true</entry>
+   <entry key="${{MB_KC_LIB}}.OTMSOAL2:db_column_1">SOORD</entry>
+   <entry key="${{MB_KC_LIB}}.OTMSOAL2:db_column_0">SOTYP</entry>
+   <entry key="${{MB_KC_LIB}}.OTMSOAL2.SOOTP:db_column_size">1</entry>
+   <entry key="${{MB_KC_LIB}}.OTMSOAL2.SOUSC1:db_column_type">CHAR</entry>
+   <entry key="${{MB_KC_LIB}}.OTMSOAL2.SOTIM:db_column_not_null">true</entry>
+   <entry key="${{MB_KC_LIB}}.OTMSOAL2.SOSUFX:db_column_precision">2</entry>
+   <entry key="${{MB_KC_LIB}}.OTMSOAL2.SOUSC5:db_column_size">25</entry>
+   <entry key="${{MB_KC_LIB}}.OTMSOAL2.SOUSC4:db_column_size">25</entry>
+   <entry key="${{MB_KC_LIB}}.OTMSOAL2.SOFLG:db_column_size">1</entry>
+   <entry key="${{MB_KC_LIB}}.OTMSOAL2.SOUSC3:db_column_size">25</entry>
+   <entry key="${{MB_KC_LIB}}.OTMSOAL2.SOTYP:db_column_size">1</entry>
+   <entry key="${{MB_KC_LIB}}.OTMSOAL2.SOUSC2:db_column_size">25</entry>
+   <entry key="${{MB_KC_LIB}}.OTMSOAL2.SOUSC1:db_column_size">25</entry>
+   <entry key="${{MB_KC_LIB}}.OTMSOAL2.SOORD:db_column_precision">8</entry>
+</properties>

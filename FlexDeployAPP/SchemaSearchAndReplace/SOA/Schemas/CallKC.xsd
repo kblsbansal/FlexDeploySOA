@@ -1,0 +1,29 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<xs:schema targetNamespace="http://xmlns.oracle.com/pcbpel/adapter/db/CallKC" xmlns="http://xmlns.oracle.com/pcbpel/adapter/db/CallKC" elementFormDefault="qualified" attributeFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <xs:element name="CallKCInput" type="CallKCInput"/>
+   <xs:complexType name="CallKCInput">
+      <xs:sequence/>
+   </xs:complexType>
+   <xs:element name="CallKCOutputCollection" type="CallKCOutputCollection"/>
+   <xs:complexType name="CallKCOutputCollection">
+      <xs:sequence>
+         <xs:element name="CallKCOutput" type="CallKCOutput" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="CallKCOutput">
+      <xs:sequence>
+         <xs:element name="SOTYP" type="xs:string" nillable="true"/>
+         <xs:element name="SOORD" type="xs:decimal" nillable="true"/>
+         <xs:element name="SOSUFX" type="xs:decimal" nillable="true"/>
+         <xs:element name="SOFLG" type="xs:string" nillable="true"/>
+         <xs:element name="SOOTP" type="xs:string" nillable="true"/>
+         <xs:element name="SOEMAL" type="xs:string" nillable="true"/>
+         <xs:element name="SOUSC1" type="xs:string" nillable="true"/>
+         <xs:element name="SOUSC2" type="xs:string" nillable="true"/>
+         <xs:element name="SOUSC3" type="xs:string" nillable="true"/>
+         <xs:element name="SOUSC4" type="xs:string" nillable="true"/>
+         <xs:element name="SOUSC5" type="xs:string" nillable="true"/>
+         <xs:element name="SOTIM" type="xs:dateTime" nillable="true"/>
+      </xs:sequence>
+   </xs:complexType>
+</xs:schema>

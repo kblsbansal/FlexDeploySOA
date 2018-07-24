@@ -1,0 +1,14 @@
+<adapter-config name="CallKC1" adapter="db" wsdlLocation="../WSDLs/CallKC1.wsdl" xmlns="http://platform.integration.oracle/blocks/adapter/fw/metadata">
+  
+  <connection-factory UIConnectionName="KCDB2DS" location="eis/DB/KCDB2DS"/>
+  <endpoint-interaction portType="CallKC1_ptt" operation="CallKC1Select">
+    <interaction-spec className="oracle.tip.adapter.db.DBReadInteractionSpec">
+      <property name="DescriptorName" value="CallKC1.Otmsoal2"/>
+      <property name="QueryName" value="CallKC1Select"/>
+      <property name="MappingsMetaDataURL" value="CallKC1-or-mappings.xml"/>
+      <property name="ReturnSingleResultSet" value="false"/>
+      <property name="GetActiveUnitOfWork" value="false"/>
+    </interaction-spec>
+  </endpoint-interaction>
+
+</adapter-config>

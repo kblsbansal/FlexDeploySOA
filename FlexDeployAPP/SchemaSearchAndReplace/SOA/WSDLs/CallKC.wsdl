@@ -1,0 +1,48 @@
+<wsdl:definitions
+     name="CallKC"
+     targetNamespace="http://xmlns.oracle.com/pcbpel/adapter/db/Development/SchemaSearchAndReplace/CallKC"
+     xmlns:tns="http://xmlns.oracle.com/pcbpel/adapter/db/Development/SchemaSearchAndReplace/CallKC"
+     xmlns:jca="http://xmlns.oracle.com/pcbpel/wsdl/jca/"
+     xmlns:plt="http://schemas.xmlsoap.org/ws/2003/05/partner-link/"
+     xmlns:db="http://xmlns.oracle.com/pcbpel/adapter/db/CallKC"
+     xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+    >
+  <plt:partnerLinkType name="CallKC_plt" >
+    <plt:role name="CallKC_role" >
+      <plt:portType name="tns:CallKC_ptt" />
+    </plt:role>
+  </plt:partnerLinkType>
+  <plt:partnerLinkType name="CallKC_plt" >
+    <plt:role name="CallKC_role" >
+      <plt:portType name="tns:CallKC_ptt" />
+    </plt:role>
+  </plt:partnerLinkType>
+  <plt:partnerLinkType name="CallKC_plt" >
+    <plt:role name="CallKC_role" >
+      <plt:portType name="tns:CallKC_ptt" />
+    </plt:role>
+  </plt:partnerLinkType>
+    <wsdl:types>
+      <schema xmlns="http://www.w3.org/2001/XMLSchema" >
+        <import namespace="http://xmlns.oracle.com/pcbpel/adapter/db/CallKC" schemaLocation="../Schemas/CallKC.xsd" />
+      </schema>
+      <schema xmlns="http://www.w3.org/2001/XMLSchema" >
+        <import namespace="http://xmlns.oracle.com/pcbpel/adapter/db/CallKC" schemaLocation="../Schemas/CallKC.xsd" />
+      </schema>
+      <schema xmlns="http://www.w3.org/2001/XMLSchema" >
+        <import namespace="http://xmlns.oracle.com/pcbpel/adapter/db/CallKC" schemaLocation="../Schemas/CallKC.xsd" />
+      </schema>
+    </wsdl:types>
+    <wsdl:message name="CallKCInput_msg">
+        <wsdl:part name="CallKCInput_msg" element="db:CallKCInput"/>
+    </wsdl:message>
+    <wsdl:message name="CallKCOutputCollection_msg">
+        <wsdl:part name="CallKCOutputCollection" element="db:CallKCOutputCollection"/>
+    </wsdl:message>
+    <wsdl:portType name="CallKC_ptt">
+        <wsdl:operation name="CallKC">
+            <wsdl:input message="tns:CallKCInput_msg"/>
+            <wsdl:output message="tns:CallKCOutputCollection_msg"/>
+        </wsdl:operation>
+    </wsdl:portType>
+</wsdl:definitions>

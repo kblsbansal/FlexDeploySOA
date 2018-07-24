@@ -1,0 +1,11 @@
+<adapter-config name="CallKC" adapter="db" wsdlLocation="../WSDLs/CallKC.wsdl" xmlns="http://platform.integration.oracle/blocks/adapter/fw/metadata">
+  
+  <connection-factory UIConnectionName="KCDB2DS" location="eis/DB/KCDB2DS"/>
+  <endpoint-interaction portType="CallKC_ptt" operation="CallKC">
+    <interaction-spec className="oracle.tip.adapter.db.DBPureSQLInteractionSpec">
+      <property name="SqlString" value="select * from ${{MB_KC_LIB}}.otmsoal2 where soord='192417'"/>
+      <property name="GetActiveUnitOfWork" value="false"/>
+    </interaction-spec>
+  </endpoint-interaction>
+
+</adapter-config>

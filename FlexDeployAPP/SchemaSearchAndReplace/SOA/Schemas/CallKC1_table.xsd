@@ -1,0 +1,41 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<xs:schema targetNamespace="http://xmlns.oracle.com/pcbpel/adapter/db/top/CallKC1" xmlns="http://xmlns.oracle.com/pcbpel/adapter/db/top/CallKC1" elementFormDefault="qualified" attributeFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <xs:element name="Otmsoal2Collection" type="Otmsoal2Collection"/>
+   <xs:complexType name="Otmsoal2Collection">
+      <xs:sequence>
+         <xs:element name="Otmsoal2" type="Otmsoal2" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="Otmsoal2">
+      <xs:sequence>
+         <xs:element name="sotyp" type="string1" minOccurs="0"/>
+         <xs:element name="soord" type="xs:int"/>
+         <xs:element name="sosufx" type="xs:int" minOccurs="0"/>
+         <xs:element name="soflg" type="string1" minOccurs="0"/>
+         <xs:element name="sootp" type="string1" minOccurs="0"/>
+         <xs:element name="soemal" type="string1" minOccurs="0"/>
+         <xs:element name="sousc1" type="string25" minOccurs="0"/>
+         <xs:element name="sousc2" type="string25" minOccurs="0"/>
+         <xs:element name="sousc3" type="string25" minOccurs="0"/>
+         <xs:element name="sousc4" type="string25" minOccurs="0"/>
+         <xs:element name="sousc5" type="string25" minOccurs="0"/>
+         <xs:element name="sotim" type="xs:dateTime" minOccurs="0"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:element name="CallKC1Select_p_ORDInputParameters" type="CallKC1Select_p_ORD"/>
+   <xs:complexType name="CallKC1Select_p_ORD">
+      <xs:sequence>
+         <xs:element name="p_ORD" type="xs:int" minOccurs="1" maxOccurs="1"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:simpleType name="string1">
+      <xs:restriction base="xs:string">
+         <xs:maxLength value="1"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="string25">
+      <xs:restriction base="xs:string">
+         <xs:maxLength value="25"/>
+      </xs:restriction>
+   </xs:simpleType>
+</xs:schema>
