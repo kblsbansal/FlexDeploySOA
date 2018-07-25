@@ -1,0 +1,43 @@
+<wsdl:definitions name="If1579_SFC_OT_BasePricePul_BPEL" targetNamespace="http://xmlns.oracle.com/ServiceBusApplication/IF1579_SFDC_OT_BasePricePull/If1579_SFC_OT_BasePricePul_BPEL" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:client="http://xmlns.oracle.com/ServiceBusApplication/IF1579_SFDC_OT_BasePricePull/If1579_SFC_OT_BasePricePul_BPEL" xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype" xmlns:ns1="http://schemas.oracle.com/bpel/extension" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+    <wsdl:documentation>
+        <abstractWSDL>https://mbci-365-dap01.itciss.com:8006/soa-infra/services/SFDC/IF1579_SFDC_OT_BasePricePull!1.0/WSDLs/If1579_SFC_OT_BasePricePul_BPEL.wsdl</abstractWSDL>
+    </wsdl:documentation>
+    <plnk:partnerLinkType name="If1579_SFC_OT_BasePricePul_BPEL">
+        <plnk:role name="If1579_SFC_OT_BasePricePul_BPELProvider" portType="client:If1579_SFC_OT_BasePricePul_BPEL"/>
+    </plnk:partnerLinkType>
+    <wsdl:import namespace="http://schemas.oracle.com/bpel/extension" location="Resource/wsdl/WSDL_1315557646.wsdl"/>
+    <wsdl:types>
+        <schema xmlns="http://www.w3.org/2001/XMLSchema">
+            <import namespace="http://xmlns.oracle.com/ServiceBusApplication/IF1579_SFDC_OT_BasePricePull/If1579_SFC_OT_BasePricePul_BPEL" schemaLocation="Resource/entities/XMLSchema_-1886762428.xsd"/>
+        </schema>
+    </wsdl:types>
+    <wsdl:message name="If1579_SFC_OT_BasePricePul_BPELRequestMessage">
+        <wsdl:part name="payload" element="client:getBasePrice"/>
+    </wsdl:message>
+    <wsdl:message name="If1579_SFC_OT_BasePricePul_BPELResponseMessage">
+        <wsdl:part name="payload" element="client:getBasePriceResponse"/>
+    </wsdl:message>
+    <wsdl:portType name="If1579_SFC_OT_BasePricePul_BPEL">
+        <wsdl:operation name="getBasePrice">
+            <wsdl:input message="client:If1579_SFC_OT_BasePricePul_BPELRequestMessage"/>
+            <wsdl:output message="client:If1579_SFC_OT_BasePricePul_BPELResponseMessage"/>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="If1579_SFC_OT_BasePricePul_BPELBinding" type="client:If1579_SFC_OT_BasePricePul_BPEL">
+        <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="getBasePrice">
+            <soap:operation style="document" soapAction="getBasePrice"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="if1579_sfc_ot_basepricepul_bpel_client_ep">
+        <wsdl:port name="If1579_SFC_OT_BasePricePul_BPEL_pt" binding="client:If1579_SFC_OT_BasePricePul_BPELBinding">
+            <soap:address location="https://mbci-365-dap01.itciss.com:8006/soa-infra/services/SFDC/IF1579_SFDC_OT_BasePricePull!1.0*soa_99b4ed6d-4fbd-4e2a-bc69-25ee0b21d6f3/if1579_sfc_ot_basepricepul_bpel_client_ep"/>
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>

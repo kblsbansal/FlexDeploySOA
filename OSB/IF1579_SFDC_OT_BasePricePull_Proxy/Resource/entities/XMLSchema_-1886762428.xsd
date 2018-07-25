@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://xmlns.oracle.com/ServiceBusApplication/IF1579_SFDC_OT_BasePricePull/If1579_SFC_OT_BasePricePul_BPEL"
+     xmlns="http://www.w3.org/2001/XMLSchema">
+    <element name="getBasePrice">
+        <complexType>
+            <sequence>
+                <element name="base_sku" type="string"/>
+                <element name="doorStyle" type="string"/>
+                <element name="Species" type="string"/>
+                <element name="original_date" type="date"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="getBasePriceResponse">
+        <complexType>
+            <sequence>
+                <element name="baseprice" type="string"/>
+                <element name="Status" type="string"/>
+                <element name="ErrorCode" type="string"/>
+                <element name="ErrorSummary" type="string"/>
+            </sequence>
+        </complexType>
+    </element>
+</schema>
