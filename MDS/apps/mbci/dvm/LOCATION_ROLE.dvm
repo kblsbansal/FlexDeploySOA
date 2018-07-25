@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dvm name="LOCATION_ROLE" xmlns="http://xmlns.oracle.com/dvm">
+<description>LOCATION ROLE</description>
+<columns>
+<column name="COMMON"/>
+<column name="OTM_01"/>
+<column name="SEBL_01"/>
+</columns>
+<rows>
+<row>
+<cell>1</cell>
+<cell>CUSTOMER</cell>
+<cell>CUSTOMER</cell>
+</row>
+<row>
+<cell>2</cell>
+<cell>BILL TO</cell>
+<cell/>
+</row>
+<row>
+<cell>4</cell>
+<cell>AIR</cell>
+<cell>AIR</cell>
+</row>
+<row>
+<cell>3</cell>
+<cell>SHIPFROM/SHIPTO</cell>
+<cell>Ship From/Ship To</cell>
+</row>
+<row>
+<cell>5</cell>
+<cell>RAIL STATION</cell>
+<cell/>
+</row>
+<row>
+<cell>6</cell>
+<cell>EQUIPMENT POOL</cell>
+<cell/>
+</row>
+<row>
+<cell>7</cell>
+<cell>BREAKDOWN LOCATION</cell>
+<cell/>
+</row>
+<row>
+<cell>8</cell>
+<cell>AIRPORT</cell>
+<cell/>
+</row>
+<row>
+<cell>9</cell>
+<cell>BATCH BALANCER SRC LOCATION</cell>
+<cell/>
+</row>
+<row>
+<cell>10</cell>
+<cell>CARRIER</cell>
+<cell/>
+</row>
+<row>
+<cell>11</cell>
+<cell>CONSOLIDATION_POOL</cell>
+<cell/>
+</row>
+<row>
+<cell>12</cell>
+<cell>CUST ACCOUNT</cell>
+<cell/>
+</row>
+<row>
+<cell>13</cell>
+<cell>DECONSOLIDATION_POOL</cell>
+<cell/>
+</row>
+<row>
+<cell>14</cell>
+<cell>DISPATCH LOCATION</cell>
+<cell/>
+</row>
+<row>
+<cell>15</cell>
+<cell>INACTIVE AIRPORT</cell>
+<cell/>
+</row>
+<row>
+<cell>16</cell>
+<cell>PORT</cell>
+<cell/>
+</row>
+<row>
+<cell>17</cell>
+<cell>RAIL JUNCTION</cell>
+<cell/>
+</row>
+<row>
+<cell>18</cell>
+<cell>RAIL RAMP</cell>
+<cell/>
+</row>
+<row>
+<cell>19</cell>
+<cell>REMIT TO</cell>
+<cell/>
+</row>
+<row>
+<cell>20</cell>
+<cell>XDOCK</cell>
+<cell/>
+</row>
+<row>
+<cell>21</cell>
+<cell>SHIPPING AGENT</cell>
+<cell/>
+</row>
+</rows>
+</dvm>

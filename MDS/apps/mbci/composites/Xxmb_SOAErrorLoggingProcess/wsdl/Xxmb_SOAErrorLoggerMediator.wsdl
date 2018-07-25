@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<wsdl:definitions name="Xxmb_SOAErrorLoggerMediator" targetNamespace="http://xmlns.oracle.com/xxmb/Xxmb_SOAErrorLoggingProcess/Xxmb_SOAErrorLoggerMediator" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:inp1="http://xmlns.oracle.com/pcbpel/adapter/db/top/Call_DBSOAErrorLog" xmlns:tns="http://xmlns.oracle.com/xxmb/Xxmb_SOAErrorLoggingProcess/Xxmb_SOAErrorLoggerMediator">
+<wsdl:types>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xsd:import namespace="http://xmlns.oracle.com/pcbpel/adapter/db/top/Call_DBSOAErrorLog" schemaLocation="oramds:/apps/mbci/composites/Xxmb_SOAErrorLoggingProcess/xsd/Call_DBSOAErrorLog_table.xsd"/>
+</xsd:schema>
+</wsdl:types>
+<wsdl:message name="requestMessage">
+<wsdl:part name="request" element="inp1:XxmbSoaErrorLogTblCollection"/>
+</wsdl:message>
+<wsdl:portType name="execute_ptt">
+<wsdl:operation name="InsertSOA">
+<wsdl:input message="tns:requestMessage"/>
+</wsdl:operation>
+<wsdl:operation name="InsertEBS">
+<wsdl:input message="tns:requestMessage"/>
+</wsdl:operation>
+</wsdl:portType>
+</wsdl:definitions>

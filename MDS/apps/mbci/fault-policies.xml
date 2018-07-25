@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<faultPolicies>
+<faultPolicy version="2.0.1" id="RejectedMessages">
+<Conditions>
+<faultName xmlns:rjm="http://schemas.oracle.com/sca/rejectedmessages" name="rjm:InboundFileReader">
+<condition>
+<action ref="ora-ws"/>
+</condition>
+</faultName>
+<faultName xmlns:rjm="http://schemas.oracle.com/sca/rejectedmessages" name="rjm:fileService_Read">
+<condition>
+<action ref="ora-ws"/>
+</condition>
+</faultName>
+<faultName xmlns:rjm="http://schemas.oracle.com/sca/rejectedmessages" name="rjm:inboundFileReader">
+<condition>
+<action ref="ora-ws"/>
+</condition>
+</faultName>
+<faultName xmlns:rjm="http://schemas.oracle.com/sca/rejectedmessages" name="rjm:inbPORcpt">
+<condition>
+<action ref="ora-ws"/>
+</condition>
+</faultName>
+<faultName xmlns:rjm="http://schemas.oracle.com/sca/rejectedmessages" name="rjm:inbFileAdapter">
+<condition>
+<action ref="ora-ws"/>
+</condition>
+</faultName>
+<faultName xmlns:rjm="http://schemas.oracle.com/sca/rejectedmessages" name="rjm:inbReadFilesvc">
+<condition>
+<action ref="ora-ws"/>
+</condition>
+</faultName>
+<faultName xmlns:rjm="http://schemas.oracle.com/sca/rejectedmessages" name="rjm:Polling_Inbound_EDI">
+<condition>
+<action ref="ora-ws"/>
+</condition>
+</faultName>
+<faultName xmlns:rjm="http://schemas.oracle.com/sca/rejectedmessages" name="rjm:poll_CalendarData">
+<condition>
+<action ref="ora-ws"/>
+</condition>
+</faultName>
+<faultName xmlns:rjm="http://schemas.oracle.com/sca/rejectedmessages" name="rjm:InboundFileReader_1">
+<condition>
+<action ref="ora-ws"/>
+</condition>
+</faultName>
+<faultName xmlns:rjm="http://schemas.oracle.com/sca/rejectedmessages" name="rjm:InboundFileReader_2">
+<condition>
+<action ref="ora-ws"/>
+</condition>
+</faultName>
+<faultName xmlns:rjm="http://schemas.oracle.com/sca/rejectedmessages" name="rjm:TriggerFilePolling_File">
+<condition>
+<action ref="ora-ws"/>
+</condition>
+</faultName>
+</Conditions>
+<Actions>
+<Action id="ora-ws">
+<invokeWS uri="http://mbci-soatest-12c.itciss.com/soa-infra/services/ADMIN/Xxmb_RejectedMessageProcess/XxmbRejectedMessageService_ep?WSDL|XxmbRejectedMessageService_ep|XxmbRejectedMessageProcess_pt"/>
+</Action>
+</Actions>
+</faultPolicy>
+undefined
+</faultPolicies>

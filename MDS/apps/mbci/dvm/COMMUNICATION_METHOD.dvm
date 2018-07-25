@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dvm name="COMMUNICATION_METHOD" xmlns="http://xmlns.oracle.com/dvm">
+<description>DVM to convert Ebiz Business Group to OTM Domain</description>
+<columns>
+<column name="EBIZ_01"/>
+<column name="COMMON"/>
+<column name="OTM_01"/>
+</columns>
+<rows>
+<row>
+<cell>EDI</cell>
+<cell>EDI</cell>
+<cell>EDI</cell>
+</row>
+<row>
+<cell>EML</cell>
+<cell>E-mail</cell>
+<cell>EMAIL</cell>
+</row>
+<row>
+<cell>FX</cell>
+<cell>Facsimile</cell>
+<cell>Fax</cell>
+</row>
+<row>
+<cell>HTTP</cell>
+<cell>HTTP</cell>
+<cell>HTTP</cell>
+</row>
+<row>
+<cell>PH</cell>
+<cell>Phone</cell>
+<cell>Phone</cell>
+</row>
+<row>
+<cell>PS</cell>
+<cell>Postal Service</cell>
+<cell>Post</cell>
+</row>
+<row>
+<cell>INR</cell>
+<cell>IncidentReport</cell>
+<cell>IncidReport</cell>
+</row>
+<row>
+<cell>HRR</cell>
+<cell>HRReported</cell>
+<cell>HRReported</cell>
+</row>
+<row>
+<cell>SPR</cell>
+<cell>SupReported</cell>
+<cell>SupReported</cell>
+</row>
+<row>
+<cell>VML</cell>
+<cell>Voicemail</cell>
+<cell>Voicemail</cell>
+</row>
+</rows>
+</dvm>

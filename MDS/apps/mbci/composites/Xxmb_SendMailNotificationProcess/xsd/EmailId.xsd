@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://integration.mbci.com/schema/Xxmb_SendMailNotificationProcess/EmailId" targetNamespace="http://integration.mbci.com/schema/Xxmb_SendMailNotificationProcess/EmailId" elementFormDefault="qualified">
+<xsd:element name="GroupId">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="Email" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:schema>

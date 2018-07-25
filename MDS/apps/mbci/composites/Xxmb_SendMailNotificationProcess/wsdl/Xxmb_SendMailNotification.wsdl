@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<wsdl:definitions name="Xxmb_SendMailNotification" targetNamespace="http://integration.mbci.com/intf/Xxmb_SendMailNotificationProcess/Xxmb_SendMailNotification" xmlns:ns1="http://integration.mbci.com/intf/Xxmb_SendMailNotificationProcess/EmailId" xmlns:plnk="http://schemas.xmlsoap.org/ws/2003/05/partner-link/" xmlns:client="http://integration.mbci.com/intf/Xxmb_SendMailNotificationProcess/Xxmb_SendMailNotification" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+<plnk:partnerLinkType name="Xxmb_SendMailNotification">
+<plnk:role name="Xxmb_SendMailNotificationProvider">
+<plnk:portType name="client:Xxmb_SendMailNotification"/>
+</plnk:role>
+</plnk:partnerLinkType>
+<wsdl:types>
+<schema xmlns="http://www.w3.org/2001/XMLSchema">
+<import namespace="http://integration.mbci.com/intf/Xxmb_SendMailNotificationProcess/Xxmb_SendMailNotification" schemaLocation="oramds:/apps/mbci/composites/Xxmb_SendMailNotificationProcess/xsd/Xxmb_SendMailNotification.xsd"/>
+</schema>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xsd:import namespace="http://integration.mbci.com/schema/Xxmb_SendMailNotificationProcess/EmailId" schemaLocation="oramds:/apps/mbci/composites/Xxmb_SendMailNotificationProcess/xsd/EmailId.xsd"/>
+</xsd:schema>
+</wsdl:types>
+<wsdl:message name="Xxmb_SendMailNotificationRequestMessage">
+<wsdl:part name="payload" element="client:process"/>
+</wsdl:message>
+<wsdl:portType name="Xxmb_SendMailNotification">
+<wsdl:operation name="process">
+<wsdl:input message="client:Xxmb_SendMailNotificationRequestMessage"/>
+</wsdl:operation>
+</wsdl:portType>
+</wsdl:definitions>

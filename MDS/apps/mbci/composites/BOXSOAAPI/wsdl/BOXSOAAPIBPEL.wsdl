@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:client="http://mbci.com/BOXSOAAPI/BPEL/BOXSOAAPI/BOXSOAAPIBPEL" xmlns:EBSBOX="http://www.mbci.com/BOXSOAAPI/XSD/EBSBOXUpload" xmlns:EBSBOXDEL="http://www.mbci.com/BOXSOAAPI/XSD/EBSBOXDeleteFile" xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype" xmlns:ns1="http://www.mbci.com/BOXSOAAPI/XSD/JavaEmbedding" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wmcbxb="http://www.mbci.com/BOXSOAAPI/XSD/BOXUploadFile" xmlns:wmcbxb1="http://www.mbci.com/BOXSOAAPI/XSD/BOXCreateFolder" name="BOXSOAAPIBPEL" targetNamespace="http://mbci.com/BOXSOAAPI/BPEL/BOXSOAAPI/BOXSOAAPIBPEL">
+<plnk:partnerLinkType name="BOXSOAAPIBPEL">
+<plnk:role name="BOXSOAAPIBPELProvider" portType="client:BOXSOAAPIBPEL"/>
+</plnk:partnerLinkType>
+<wsdl:types>
+<schema xmlns="http://www.w3.org/2001/XMLSchema">
+<import namespace="http://mbci.com/BOXSOAAPI/BPEL/BOXSOAAPI/BOXSOAAPIBPEL" schemaLocation="oramds:/apps/mbci/composites/BOXSOAAPI/xsd/BOXSOAAPIBPEL.xsd"/>
+<import namespace="http://www.mbci.com/BOXSOAAPI/XSD/EBSBOXUpload" schemaLocation="oramds:/apps/mbci/composites/BOXSOAAPI/xsd/EBSBOXUpload.xsd"/>
+<import namespace="http://www.mbci.com/BOXSOAAPI/XSD/EBSBOXDeleteFile" schemaLocation="oramds:/apps/mbci/composites/BOXSOAAPI/xsd/EBSBOXDeleteFile.xsd"/>
+</schema>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xsd:import namespace="http://www.mbci.com/BOXSOAAPI/XSD/JavaEmbedding" schemaLocation="oramds:/apps/mbci/composites/BOXSOAAPI/xsd/JavaEmbedding.xsd"/>
+</xsd:schema>
+<xsd:schema>
+<xsd:import schemaLocation="oramds:/apps/mbci/composites/BOXSOAAPI/xsd/BOXUploadFile.xsd" namespace="http://www.mbci.com/BOXSOAAPI/XSD/BOXUploadFile"/>
+</xsd:schema>
+<xsd:schema>
+<xsd:import schemaLocation="oramds:/apps/mbci/composites/BOXSOAAPI/xsd/BOXCreateFolder.xsd" namespace="http://www.mbci.com/BOXSOAAPI/XSD/BOXCreateFolder"/>
+</xsd:schema>
+</wsdl:types>
+<wsdl:message name="EBSBOXUPloadRequestMessage">
+<wsdl:part name="payload" element="EBSBOX:Input"/>
+</wsdl:message>
+<wsdl:message name="EBSBOXUPloadResponseMessage">
+<wsdl:part name="payload" element="EBSBOX:Response"/>
+</wsdl:message>
+<wsdl:message name="EBSBOXFileDeleteRequestMessage">
+<wsdl:part name="payload" element="EBSBOXDEL:Input"/>
+</wsdl:message>
+<wsdl:message name="EBSBOXFileDeleteResponseMessage">
+<wsdl:part name="payload" element="EBSBOXDEL:Response"/>
+</wsdl:message>
+<wsdl:message name="BOXCreateFolderRequestMessage">
+<wsdl:part name="part" element="wmcbxb1:Input"/>
+</wsdl:message>
+<wsdl:message name="BOXCreateFolderResponseMessage">
+<wsdl:part name="part" element="wmcbxb1:Response"/>
+</wsdl:message>
+<wsdl:message name="BOXUploadFileRequestMessage">
+<wsdl:part name="part" element="wmcbxb:Input"/>
+</wsdl:message>
+<wsdl:message name="BOXUploadFileResponseMessage">
+<wsdl:part name="part" element="wmcbxb:Response"/>
+</wsdl:message>
+<wsdl:portType name="BOXSOAAPIBPEL">
+<wsdl:operation name="EBSBOXUpload">
+<wsdl:input message="client:EBSBOXUPloadRequestMessage"/>
+<wsdl:output message="client:EBSBOXUPloadResponseMessage"/>
+</wsdl:operation>
+<wsdl:operation name="EBSBOXDeleteFile">
+<wsdl:input message="client:EBSBOXFileDeleteRequestMessage"/>
+<wsdl:output message="client:EBSBOXFileDeleteResponseMessage"/>
+</wsdl:operation>
+<wsdl:operation name="BOXCreateFolder">
+<wsdl:input message="client:BOXCreateFolderRequestMessage"/>
+<wsdl:output message="client:BOXCreateFolderResponseMessage"/>
+</wsdl:operation>
+<wsdl:operation name="BOXUploadFile">
+<wsdl:input message="client:BOXUploadFileRequestMessage"/>
+<wsdl:output message="client:BOXUploadFileResponseMessage"/>
+</wsdl:operation>
+</wsdl:portType>
+</wsdl:definitions>

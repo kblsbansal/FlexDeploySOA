@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.mbci.com/BOXSOAAPI/XSD/JavaEmbedding" targetNamespace="http://www.mbci.com/BOXSOAAPI/XSD/JavaEmbedding" elementFormDefault="qualified">
+<xsd:element name="JavaEmbedding">
+<xsd:annotation>
+<xsd:documentation>A sample element</xsd:documentation>
+</xsd:annotation>
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="FileContent" type="xsd:string"/>
+<xsd:element name="FileName" type="xsd:string"/>
+<xsd:element name="FolderName" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:schema>

@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://integration.mbci.com/intf/Xxmb_SendMailNotificationProcess/Xxmb_SendMailNotification" xmlns="http://www.w3.org/2001/XMLSchema">
+<element name="process">
+<complexType>
+<sequence>
+<element name="Process_Name" type="string"/>
+<element name="Instance_Id" type="string"/>
+<element name="Request_Id" type="string"/>
+<element name="Notify_Flag" type="string"/>
+<element name="Error_Details" type="string"/>
+<element name="Partition_Name" type="string"/>
+<element name="Rice_Id" type="string"/>
+<element name="attribute1" type="string"/>
+<element name="attribute2" type="string"/>
+<element name="attribute3" type="string"/>
+<element name="attribute4" type="string"/>
+<element name="attribute5" type="string"/>
+</sequence>
+</complexType>
+</element>
+</schema>
