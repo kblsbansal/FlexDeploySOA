@@ -15,11 +15,11 @@
         </dgm:operations>
     </dgm:gService>
     <dgm:gReference name="CallKC">
-        <dgm:body borderWidth="2" arcRad="20" X="894" Y="26" width="136" height="84">
+        <dgm:body borderWidth="2" arcRad="20" X="904" Y="26" width="136" height="84">
             <dgm:borderColor r="153" g="153" b="153"/>
             <dgm:bgColor r="255" g="255" b="255"/>
         </dgm:body>
-        <dgm:shadow arcRad="20" X="884" Y="19" width="156" height="98">
+        <dgm:shadow arcRad="20" X="894" Y="19" width="156" height="98">
             <dgm:bgColor r="196" g="228" b="240"/>
         </dgm:shadow>
         <dgm:inputPort name="CallKC" X="-10" Y="0" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/pcbpel/adapter/db/Development/SchemaSearchAndReplace/CallKC#wsdl.interface(CallKC_ptt)"/>
@@ -29,11 +29,11 @@
         </dgm:operations>
     </dgm:gReference>
     <dgm:gReference name="CallKC1">
-        <dgm:body borderWidth="2" arcRad="20" X="894" Y="144" width="136" height="84">
+        <dgm:body borderWidth="2" arcRad="20" X="904" Y="144" width="136" height="84">
             <dgm:borderColor r="153" g="153" b="153"/>
             <dgm:bgColor r="255" g="255" b="255"/>
         </dgm:body>
-        <dgm:shadow arcRad="20" X="884" Y="137" width="156" height="98">
+        <dgm:shadow arcRad="20" X="894" Y="137" width="156" height="98">
             <dgm:bgColor r="196" g="228" b="240"/>
         </dgm:shadow>
         <dgm:inputPort name="CallKC1" X="-10" Y="0" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/pcbpel/adapter/db/Development/SchemaSearchAndReplace/CallKC1#wsdl.interface(CallKC1_ptt)"/>
@@ -43,12 +43,12 @@
         </dgm:operations>
     </dgm:gReference>
     <dgm:gComponent name="BPELProcess">
-        <dgm:body borderWidth="2" arcRad="20" X="461" Y="84" width="130" height="86">
+        <dgm:body borderWidth="2" arcRad="20" X="466" Y="84" width="130" height="86">
             <dgm:borderColor r="69" g="113" b="140"/>
             <dgm:lightBgColor r="166" g="208" b="230"/>
             <dgm:darkBgColor r="99" g="162" b="201"/>
         </dgm:body>
-        <dgm:shadow arcRad="20" X="451" Y="77" width="150" height="102">
+        <dgm:shadow arcRad="20" X="456" Y="77" width="150" height="102">
             <dgm:bgColor r="196" g="228" b="240"/>
         </dgm:shadow>
         <dgm:inputPort name="bpelprocess_client" X="-10" Y="15" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/Development/SchemaSearchAndReplace/BPELProcess#wsdl.interface(BPELProcess)"/>
@@ -57,21 +57,21 @@
         <dgm:nodeIcon URI="/oracle/tip/tools/ide/bpel/shared/plugins/resources/images/soa/process_20x20.png" X="10" Y="4" width="20" height="20"/>
     </dgm:gComponent>
     <dgm:gWireLink source="bpelprocess_client_ep" target="BPELProcess/bpelprocess_client" width="2">
-        <dgm:gSegment X1="168" Y1="109" X2="451" Y2="109"/>
+        <dgm:gSegment X1="168" Y1="109" X2="456" Y2="109"/>
         <dgm:baseColor r="153" g="153" b="153"/>
         <dgm:selectedColor r="49" g="106" b="196"/>
     </dgm:gWireLink>
     <dgm:gWireLink source="BPELProcess/CallKC" target="CallKC" width="2">
-        <dgm:gSegment X1="601" Y1="109" X2="625" Y2="109"/>
-        <dgm:gSegment X1="625" Y1="109" X2="625" Y2="36"/>
-        <dgm:gSegment X1="625" Y1="36" X2="884" Y2="36"/>
+        <dgm:gSegment X1="606" Y1="109" X2="630" Y2="109"/>
+        <dgm:gSegment X1="630" Y1="109" X2="630" Y2="36"/>
+        <dgm:gSegment X1="630" Y1="36" X2="894" Y2="36"/>
         <dgm:baseColor r="153" g="153" b="153"/>
         <dgm:selectedColor r="49" g="106" b="196"/>
     </dgm:gWireLink>
     <dgm:gWireLink source="BPELProcess/CallKC1" target="CallKC1" width="2">
-        <dgm:gSegment X1="601" Y1="134" X2="625" Y2="134"/>
-        <dgm:gSegment X1="625" Y1="134" X2="625" Y2="154"/>
-        <dgm:gSegment X1="625" Y1="154" X2="884" Y2="154"/>
+        <dgm:gSegment X1="606" Y1="134" X2="630" Y2="134"/>
+        <dgm:gSegment X1="630" Y1="134" X2="630" Y2="154"/>
+        <dgm:gSegment X1="630" Y1="154" X2="894" Y2="154"/>
         <dgm:baseColor r="153" g="153" b="153"/>
         <dgm:selectedColor r="49" g="106" b="196"/>
     </dgm:gWireLink>

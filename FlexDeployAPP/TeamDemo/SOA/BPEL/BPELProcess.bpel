@@ -15,7 +15,8 @@
                xmlns:client="http://xmlns.oracle.com/FlexDeployAPP/TeamDemo/BPELProcess"
                xmlns:ora="http://schemas.oracle.com/xpath/extension"
                xmlns:ui="http://xmlns.oracle.com/soa/designer"
-               xmlns:bpel="http://docs.oasis-open.org/wsbpel/2.0/process/executable">
+               xmlns:bpel="http://docs.oasis-open.org/wsbpel/2.0/process/executable"
+         xmlns:bpelx="http://schemas.oracle.com/bpel/extension">
 
   <import ui:processWSDL="true" namespace="http://xmlns.oracle.com/FlexDeployAPP/TeamDemo/BPELProcess" location="../WSDLs/BPELProcess.wsdl" importType="http://schemas.xmlsoap.org/wsdl/"/>
   <!-- 
@@ -56,6 +57,6 @@
 
     <!-- Receive input from requestor. (Note: This maps to operation defined in BPELProcess.wsdl) -->
     <receive name="receiveInput" partnerLink="bpelprocess_client" portType="client:BPELProcess" operation="process" variable="inputVariable" createInstance="yes"/>
-
+    <empty name="Empty1"/>
   </sequence>
 </process>
