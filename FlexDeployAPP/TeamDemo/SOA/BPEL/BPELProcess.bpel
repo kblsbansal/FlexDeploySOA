@@ -58,5 +58,6 @@
     <!-- Receive input from requestor. (Note: This maps to operation defined in BPELProcess.wsdl) -->
     <receive name="receiveInput" partnerLink="bpelprocess_client" portType="client:BPELProcess" operation="process" variable="inputVariable" createInstance="yes"/>
     <empty name="Empty1"/>
+    <empty name="Empty2"/>
   </sequence>
 </process>
